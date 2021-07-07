@@ -388,6 +388,16 @@ func (c *compileCtx) compilePath(path string, p *openapi.Path) error {
 			}
 
 			if resType != nil {
+				r, ok := resType.(*protobuf.Reference)
+				if ok {
+					typ, err := c.getTypeFromReference(r.Name())
+					if err != nil {
+						return errors.Wrapf(err, `failed to look up response ref for %s`, endpointName)
+					}
+					resType = typ
+				}
+				resType = c.getBoxedType(resType)
+
 				m, ok := resType.(*protobuf.Message)
 				if !ok {
 					return errors.Errorf(`got non-message type (%T) in response for %s`, resType, endpointName)
