@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/NYTimes/openapi2proto/protobuf"
+	"github.com/hkraftno/openapi2proto/protobuf"
 	"github.com/pmezard/go-difflib/difflib"
 )
 

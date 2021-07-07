@@ -1,6 +1,6 @@
 package compiler
 
-import "github.com/NYTimes/openapi2proto/protobuf"
+import "github.com/hkraftno/openapi2proto/protobuf"
 
 // Parameter is used to represent a parameter.
 type Parameter struct {
