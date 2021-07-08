@@ -1,10 +1,10 @@
 package compiler
 
 import (
-	"github.com/hkraftno/openapi2proto/internal/option"
+	"github.com/hkraftno/openapi2protohk/internal/option"
 
-	"github.com/hkraftno/openapi2proto/openapi"
-	"github.com/hkraftno/openapi2proto/protobuf"
+	"github.com/hkraftno/openapi2protohk/openapi"
+	"github.com/hkraftno/openapi2protohk/protobuf"
 )
 
 const (

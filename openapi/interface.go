@@ -1,7 +1,7 @@
 package openapi
 
 import (
-	"github.com/hkraftno/openapi2proto/internal/option"
+	"github.com/hkraftno/openapi2protohk/internal/option"
 )
 
 const (

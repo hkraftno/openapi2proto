@@ -7,7 +7,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/hkraftno/openapi2proto/openapi"
+	"github.com/hkraftno/openapi2protohk/openapi"
 )
 
 // since we're not considering unicode here, we're not using unicode.*

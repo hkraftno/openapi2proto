@@ -1,14 +1,14 @@
 // Package compiler contains tools to take openapi.* definitions and
 // compile them into protobuf.* structures.
-package compiler // github.com/hkraftno/openapi2proto/compiler
+package compiler // github.com/hkraftno/openapi2protohk/compiler
 
 import (
 	"bytes"
 	"sort"
 	"strings"
 
-	"github.com/hkraftno/openapi2proto/openapi"
-	"github.com/hkraftno/openapi2proto/protobuf"
+	"github.com/hkraftno/openapi2protohk/openapi"
+	"github.com/hkraftno/openapi2protohk/protobuf"
 	"github.com/pkg/errors"
 )
 

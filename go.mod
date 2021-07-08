@@ -1,4 +1,4 @@
-module github.com/hkraftno/openapi2proto
+module github.com/hkraftno/openapi2protohk
 
 go 1.13
 

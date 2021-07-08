@@ -1,11 +1,11 @@
-package openapi2proto // github.com/hkraftno/openapi2proto
+package openapi2protohk
 
 import (
 	"io"
 
-	"github.com/hkraftno/openapi2proto/compiler"
-	"github.com/hkraftno/openapi2proto/openapi"
-	"github.com/hkraftno/openapi2proto/protobuf"
+	"github.com/hkraftno/openapi2protohk/compiler"
+	"github.com/hkraftno/openapi2protohk/openapi"
+	"github.com/hkraftno/openapi2protohk/protobuf"
 	"github.com/pkg/errors"
 )
 

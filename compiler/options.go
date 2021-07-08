@@ -1,6 +1,6 @@
 package compiler
 
-import "github.com/hkraftno/openapi2proto/internal/option"
+import "github.com/hkraftno/openapi2protohk/internal/option"
 
 const (
 	optkeyAnnotation         = "annotation"

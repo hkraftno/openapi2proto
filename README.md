@@ -1,4 +1,4 @@
-# openapi2proto [![Build Status](https://travis-ci.org/nytimes/openapi2proto.svg?branch=master)](https://travis-ci.org/nytimes/openapi2proto)
+# openapi2protohk [![Build Status](https://travis-ci.org/nytimes/openapi2protohk.svg?branch=master)](https://travis-ci.org/nytimes/openapi2protohk)
 
 This tool will accept an OpenAPI/Swagger definition (yaml or JSON) and generate a Protobuf v3 schema and gRPC service definition from it.
 
@@ -6,7 +6,7 @@ This tool will accept an OpenAPI/Swagger definition (yaml or JSON) and generate 
 
 To install, have Go installed with `$GOPATH/bin` on your `$PATH` and then:
 ```
-go get -u github.com/hkraftno/openapi2proto/cmd/openapi2proto
+go get -u github.com/hkraftno/openapi2protohk/cmd/openapi2protohk
 ```
 
 ## Run
@@ -107,7 +107,7 @@ Will generate:
 ## Example
 
 ```
-╰─➤  openapi2proto -spec swagger.yaml -annotate
+╰─➤  openapi2protohk -spec swagger.yaml -annotate
 syntax = "proto3";
 
 package swaggerpetstore;

@@ -3,7 +3,7 @@ package protobuf
 import (
 	"io"
 
-	"github.com/hkraftno/openapi2proto/internal/option"
+	"github.com/hkraftno/openapi2protohk/internal/option"
 )
 
 const (

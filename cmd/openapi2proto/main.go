@@ -7,9 +7,9 @@ import (
 	"io"
 	"os"
 
-	"github.com/hkraftno/openapi2proto"
-	"github.com/hkraftno/openapi2proto/compiler"
-	"github.com/hkraftno/openapi2proto/protobuf"
+	"github.com/hkraftno/openapi2protohk"
+	"github.com/hkraftno/openapi2protohk/compiler"
+	"github.com/hkraftno/openapi2protohk/protobuf"
 	"github.com/pkg/errors"
 )
 
@@ -42,7 +42,7 @@ func _main() error {
 		dst = f
 	}
 
-	var options []openapi2proto.Option
+	var options []openapi2protohk.Option
 	var encoderOptions []protobuf.Option
 	var compilerOptions []compiler.Option
 
@@ -63,14 +63,14 @@ func _main() error {
 	}
 
 	if len(compilerOptions) > 0 {
-		options = append(options, openapi2proto.WithCompilerOptions(compilerOptions...))
+		options = append(options, openapi2protohk.WithCompilerOptions(compilerOptions...))
 	}
 
 	if len(encoderOptions) > 0 {
-		options = append(options, openapi2proto.WithEncoderOptions(encoderOptions...))
+		options = append(options, openapi2protohk.WithEncoderOptions(encoderOptions...))
 	}
 
-	if err := openapi2proto.Transpile(dst, *specPath, options...); err != nil {
+	if err := openapi2protohk.Transpile(dst, *specPath, options...); err != nil {
 		return errors.Wrap(err, `failed to transpile`)
 	}
 	return nil

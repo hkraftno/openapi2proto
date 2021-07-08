@@ -3,7 +3,7 @@ package compiler
 import (
 	"testing"
 
-	"github.com/hkraftno/openapi2proto/openapi"
+	"github.com/hkraftno/openapi2protohk/openapi"
 )
 
 type endpointNamingConversionTestCase struct {
