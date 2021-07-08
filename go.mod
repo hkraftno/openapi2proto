@@ -1,6 +1,6 @@
 module github.com/hkraftno/openapi2proto
 
-go 1.12
+go 1.13
 
 require (
 	github.com/dolmen-go/jsonptr v0.0.0-20200427210345-20e1608f9d85
